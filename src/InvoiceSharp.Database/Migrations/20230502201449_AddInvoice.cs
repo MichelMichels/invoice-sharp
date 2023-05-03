@@ -5,7 +5,7 @@
 namespace InvoiceSharp.Database.Migrations
 {
     /// <inheritdoc />
-    public partial class addinvoice : Migration
+    public partial class AddInvoice : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

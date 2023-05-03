@@ -1,6 +1,8 @@
 ﻿using InvoiceSharp.Models;
 using Microsoft.EntityFrameworkCore;
 
+#nullable enable
+
 namespace InvoiceSharp.Database;
 
 public class InvoicingContext : DbContext

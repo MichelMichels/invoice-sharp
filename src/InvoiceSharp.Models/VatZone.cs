@@ -10,10 +10,14 @@ namespace InvoiceSharp.Models;
 public class VatZone
 {
     public int VatZoneId { get; set; }
+    
     [Required]
-    public string CountryCode { get; set; }
+    [MaxLength(2)]
+    public string CountryCode { get; set; } = string.Empty;
+    
     [Required]
     public decimal Rate { get; set; }
+
     [Required]
     public string Description { get; set; } = string.Empty;
 

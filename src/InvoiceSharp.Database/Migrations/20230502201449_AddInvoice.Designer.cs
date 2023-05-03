@@ -12,7 +12,7 @@ namespace InvoiceSharp.Database.Migrations
 {
     [DbContext(typeof(InvoicingContext))]
     [Migration("20230502201449_add-invoice")]
-    partial class addinvoice
+    partial class AddInvoice
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
