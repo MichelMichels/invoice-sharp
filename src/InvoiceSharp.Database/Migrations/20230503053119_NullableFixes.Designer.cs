@@ -3,6 +3,7 @@ using System;
 using InvoiceSharp.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InvoiceSharp.Database.Migrations
 {
     [DbContext(typeof(InvoicingContext))]
-    partial class InvoicingContextModelSnapshot : ModelSnapshot
+    [Migration("20230503053119_NullableFixes")]
+    partial class NullableFixes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
